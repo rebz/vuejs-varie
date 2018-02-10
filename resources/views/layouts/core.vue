@@ -4,7 +4,7 @@
 
         <div class="Core__con">
 
-            <code>layouts/core/Core.vue</code>
+            <code>layouts/core.vue</code>
 
             <core-header></core-header>
 
@@ -18,7 +18,7 @@
 
 <script>
     import Vue from "vue";
-    import CoreHeader from './CoreHeader.vue'
+    import CoreHeader from './core/CoreHeader.vue'
 
     export default Vue.extend({
         components: {
