@@ -2,7 +2,7 @@
 
     <div>
 
-        content test
+        Error 404
 
     </div>
 
