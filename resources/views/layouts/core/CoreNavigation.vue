@@ -2,9 +2,11 @@
 
     <div class="CoreNavigation">
 
+        <code>layouts/core/CoreNavigation.vue</code>
+
         <nav class="CoreNavigation__con">
 
-            <code>layouts/core/CoreNavigation.vue</code>
+            <router-link :to="{ name: 'people' }">People</router-link>
 
         </nav>
 
@@ -13,6 +15,6 @@
 </template>
 
 <script>
-    import Vue from "Vue";
+    import Vue from "vue";
     export default Vue.extend({});
 </script>

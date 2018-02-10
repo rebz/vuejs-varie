@@ -15,7 +15,7 @@
 </template>
 
 <script>
-    import Vue from "Vue";
+    import Vue from "vue";
     import CoreNavigation from './CoreNavigation.vue'
 
     export default Vue.extend({
