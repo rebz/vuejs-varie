@@ -1,6 +1,6 @@
 <template>
 
-    <div class="Core">
+    <div class="Core Container">
 
         <div class="Core__con">
 

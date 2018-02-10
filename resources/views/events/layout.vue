@@ -1,6 +1,6 @@
 <template>
 
-    <div class="Events">
+    <div class="Events Container">
 
         <div class="Events__con">
 

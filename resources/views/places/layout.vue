@@ -1,6 +1,6 @@
 <template>
 
-    <div class="Places">
+    <div class="Places Container">
 
         <div class="Places__con">
 

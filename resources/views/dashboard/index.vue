@@ -1,6 +1,6 @@
 <template>
 
-    <div class="Dashboard">
+    <div class="Dashboard Container">
 
         <div class="Dashboard__con">
 

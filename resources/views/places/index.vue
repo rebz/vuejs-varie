@@ -1,6 +1,6 @@
 <template>
 
-    <div class="PlacesIndex">
+    <div class="PlacesIndex Container">
 
         <code>places/index.vue</code>
 

@@ -1,6 +1,6 @@
 <template>
 
-    <div class="PeopleIndex">
+    <div class="PeopleIndex Container">
 
         <code>events/index.vue</code>
 

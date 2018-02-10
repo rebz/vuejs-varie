@@ -1,6 +1,6 @@
 <template>
 
-    <div class="People">
+    <div class="People Container">
 
         <div class="People__con">
 

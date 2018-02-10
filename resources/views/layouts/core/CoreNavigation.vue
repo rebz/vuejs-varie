@@ -1,6 +1,6 @@
 <template>
 
-    <div class="CoreNavigation">
+    <div class="CoreNavigation Container">
 
         <code>layouts/core/CoreNavigation.vue</code>
 

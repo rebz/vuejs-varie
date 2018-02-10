@@ -1,0 +1,16 @@
+.Container {
+    margin: 20px !important;
+    padding: 20px !important;
+    border: #999 solid 2px;
+    max-width: 100%;
+
+    code {
+        @include font-size(14px);
+        background: #f5f5f5;
+        border: #ddd solid 1px;
+        border-bottom: #ddd solid 3px;
+        display: inline-block;
+        padding: 3px 6px 2px;
+        margin: 0 0 20px;
+    }
+}

@@ -1,16 +1,20 @@
 <template>
 
-    <header class="CoreBody">
+    <div class="CoreBody Container">
 
         <div class="CoreBody__con">
 
             <code>layouts/core/CoreBody.vue</code>
 
-            <router-view></router-view>
+            <transition :name="transitionName">
+
+                <router-view></router-view>
+
+            </transition>
 
         </div>
 
-    </header>
+    </div>
 
 </template>
 
@@ -18,5 +22,24 @@
     import Vue from "vue";
 
     export default Vue.extend({
+
+        data() {
+            return {
+                transitionName: 'test'
+            }
+        },
+
+        watch: {
+
+            '$route' (to, from) {
+
+                const toDepth = to.path.split('/').length
+                const fromDepth = from.path.split('/').length
+                Vue.set(this, 'transitionName', toDepth < fromDepth ? 'slide-right' : 'slide-left')
+
+            }
+
+        }
+
     });
 </script>

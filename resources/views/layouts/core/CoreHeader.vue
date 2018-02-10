@@ -1,6 +1,6 @@
 <template>
 
-    <header class="CoreHeader">
+    <header class="CoreHeader Container">
 
         <div class="CoreHeader__con">
 
