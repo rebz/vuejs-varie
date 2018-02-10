@@ -8,7 +8,7 @@
 
             <div class="CoreNavigation__actions">
 
-                <button>
+                <button @click="navBackward">
                     Back
                 </button>
 
@@ -16,7 +16,7 @@
                     Settings
                 </button>
 
-                <button>
+                <button @click="navForward">
                     Forward
                 </button>
 
@@ -46,7 +46,18 @@
 
         mounted() {
             console.info(this.$router)
-        }
+        },
 
+        methods: {
+
+            navBackward() {
+                this.$router.go(-1)
+            },
+
+            navForward() {
+                this.$router.go(1)
+            }
+
+        }
     });
 </script>
