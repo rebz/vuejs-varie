@@ -8,7 +8,13 @@
 
             <core-header></core-header>
 
-            <router-view></router-view>
+            <core-body></core-body>
+
+            <!--<router-view name="module"></router-view>-->
+
+            <p>notifications component goes here</p>
+
+            <p>global ui elements go here</p>
 
         </div>
 
@@ -19,10 +25,12 @@
 <script>
     import Vue from "vue";
     import CoreHeader from './core/CoreHeader.vue'
+    import CoreBody from './core/CoreBody.vue'
 
     export default Vue.extend({
         components: {
-            CoreHeader
+            CoreHeader,
+            CoreBody
         }
     });
 </script>

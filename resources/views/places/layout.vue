@@ -1,10 +1,10 @@
 <template>
 
-    <div class="Events">
+    <div class="Places">
 
-        <div class="Events__con">
+        <div class="Places__con">
 
-            <code>events/layout.vue</code>
+            <code>places/layout.vue</code>
 
             <router-view></router-view>
 

@@ -4,7 +4,7 @@
 
         <div class="People__con">
 
-            people/layout.vue
+            <code>people/layout.vue</code>
 
             <router-view></router-view>
 

@@ -1,8 +1,8 @@
 <template>
 
-    <div class="PeopleIndex">
+    <div class="PlacesIndex">
 
-        <code>people/index.vue</code>
+        <code>places/index.vue</code>
 
     </div>
 

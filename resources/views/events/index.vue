@@ -2,7 +2,7 @@
 
     <div class="PeopleIndex">
 
-        events/index.vue
+        <code>events/index.vue</code>
 
     </div>
 

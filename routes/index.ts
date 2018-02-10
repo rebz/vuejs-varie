@@ -1,12 +1,13 @@
 let $router = $app.make<RouterInterface>("$router");
 import RouterInterface from "varie/lib/routing/RouterInterface";
 
+
 /**
  * Core Layout
  *
  * ...
  */
-$router.template("", "layouts/core").group(() => {
+$router.template("/", "layouts/core").group(() => {
 
 
     /**
@@ -16,16 +17,6 @@ $router.template("", "layouts/core").group(() => {
      */
     $router.route("/", "dashboard/index").setName("dashboard");
 
-    /**
-     * People
-     *
-     * ...
-     */
-    $router.template("/people", "people/layout").group(() => {
-
-        $router.route("", "people/index").setName("people");
-
-    });
 
     /**
      * Events
@@ -34,15 +25,40 @@ $router.template("", "layouts/core").group(() => {
      */
     $router.template("/events", "events/layout").group(() => {
 
-        $router.route("", "events/index").setName("events");
+        $router.route("/", "events/index").setName("events");
 
     });
 
+
     /**
-     * 404 - Catch All
+     * People
      *
      * ...
      */
-    // $router.route("*", "404");
+    $router.template("/people", "people/layout").group(() => {
+
+        $router.route("/", "people/index").setName("people");
+
+    });
+
+
+    /**
+     * Places
+     *
+     * ...
+     */
+    $router.template("/places", "places/layout").group(() => {
+
+        $router.route("/", "places/index").setName("places");
+
+    });
 
 });
+
+
+/**
+ * 404 - Catch All
+ *
+ * ...
+ */
+$router.route("*", "404");

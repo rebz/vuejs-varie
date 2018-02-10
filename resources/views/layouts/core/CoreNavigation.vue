@@ -4,11 +4,37 @@
 
         <code>layouts/core/CoreNavigation.vue</code>
 
-        <nav class="CoreNavigation__con">
+        <div class="CoreNavigation__con">
 
-            <router-link :to="{ name: 'people' }">People</router-link>
+            <div class="CoreNavigation__actions">
 
-        </nav>
+                <button>
+                    Back
+                </button>
+
+                <button>
+                    Settings
+                </button>
+
+                <button>
+                    Forward
+                </button>
+
+            </div>
+
+            <nav>
+
+                <router-link :to="{ name: 'dashboard' }">Dashboard</router-link>
+
+                <router-link :to="{ name: 'events' }">Events</router-link>
+
+                <router-link :to="{ name: 'people' }">People</router-link>
+
+                <router-link :to="{ name: 'places' }">Places</router-link>
+
+            </nav>
+
+        </div>
 
     </div>
 
@@ -16,5 +42,11 @@
 
 <script>
     import Vue from "vue";
-    export default Vue.extend({});
+    export default Vue.extend({
+
+        mounted() {
+            console.info(this.$router)
+        }
+
+    });
 </script>
