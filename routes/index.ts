@@ -35,9 +35,11 @@ $router.template("/", "layouts/core").group(() => {
      *
      * ...
      */
-    $router.template("/people", "people/layout").group(() => {
+    $router.template("/people/", "people/layout").group(() => {
 
         $router.route("/", "people/index").setName("people");
+
+        $router.route("/:person", "people/view").setName("people-view");
 
     });
 
@@ -53,12 +55,12 @@ $router.template("/", "layouts/core").group(() => {
 
     });
 
+
+    /**
+     * 404 - Catch All
+     *
+     * ...
+     */
+    $router.route("*", "404");
 });
 
-
-/**
- * 404 - Catch All
- *
- * ...
- */
-$router.route("*", "404");
