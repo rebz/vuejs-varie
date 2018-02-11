@@ -8,6 +8,8 @@
 
             <core-navigation></core-navigation>
 
+            <core-sub-navigation></core-sub-navigation>
+
         </div>
 
     </header>
@@ -17,10 +19,12 @@
 <script>
     import Vue from "vue";
     import CoreNavigation from './CoreNavigation.vue'
+    import CoreSubNavigation from './CoreSubNavigation.vue'
 
     export default Vue.extend({
         components: {
-            CoreNavigation
+            CoreNavigation,
+            CoreSubNavigation
         }
     });
 </script>

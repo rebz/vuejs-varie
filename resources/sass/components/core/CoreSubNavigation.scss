@@ -1,0 +1,11 @@
+.CoreSubNavigation {
+
+    a {
+        color: $secondary-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
