@@ -35,7 +35,7 @@ $router.template("/", "layouts/core").group(() => {
      *
      * ...
      */
-    $router.template("/people/", "people/layout").group(() => {
+    $router.template("/people", "people/layout").group(() => {
 
         $router.route("/", "people/index").setName("people");
 
