@@ -28,9 +28,11 @@
     import CoreBody from './core/CoreBody.vue'
 
     export default Vue.extend({
+
         components: {
             CoreHeader,
             CoreBody
         }
+
     });
 </script>

@@ -44,10 +44,6 @@
     import Vue from "vue";
     export default Vue.extend({
 
-        mounted() {
-            console.info(this.$router)
-        },
-
         methods: {
 
             navBackward() {

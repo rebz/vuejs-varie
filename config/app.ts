@@ -10,6 +10,7 @@ import AutoRegisterMixinsServiceProvider from "varie/lib/plugins/autoRegisterMix
 import AutoRegisterFiltersServiceProvider from "varie/lib/plugins/autoRegisterFilters/ServiceProvider";
 import AutoRegisterComponentsServiceProvider from "varie/lib/plugins/autoRegisterComponents/ServiceProvider";
 import AutoRegisterDirectivesServiceProvider from "varie/lib/plugins/autoRegisterDirectives/ServiceProvider";
+import LodashProvider from "@app/providers/lodashProvider";
 
 export default {
   /*
@@ -76,6 +77,7 @@ export default {
      * Application Service Providers...
      */
     AppServiceProvider,
-    NotificationsProvider
+    NotificationsProvider,
+    LodashProvider
   }
 };

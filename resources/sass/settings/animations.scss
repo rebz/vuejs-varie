@@ -18,11 +18,14 @@
     $slide-duration: 500ms;
 
 
+
+
 /*
  * Slide Left
  *
  * ...
  */
+
     .slide-left-enter-active, .slide-left-leave-active {
         transition: transform $slide-duration cubic-bezier(1.0, 0.5, 0.8, 1.0),
                     opacity $slide-duration cubic-bezier(1.0, 0.5, 0.8, 1.0);
@@ -44,11 +47,14 @@
     }
 
 
+
+
 /*
  * Slide Right
  *
  * ...
  */
+
     .slide-right-enter-active, .slide-right-leave-active {
         transition: transform $slide-duration cubic-bezier(1.0, 0.5, 0.8, 1.0),
                     opacity $slide-duration cubic-bezier(1.0, 0.5, 0.8, 1.0);

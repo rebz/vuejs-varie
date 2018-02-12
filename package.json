@@ -11,6 +11,8 @@
     "pretty": "prettier --write './**/*.*(ts|js|json|vue)'"
   },
   "dependencies": {
+    "lodash": "^4.17.5",
+    "lodash-inflection": "^1.5.0",
     "vue": "^2.5.3",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"

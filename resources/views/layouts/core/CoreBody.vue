@@ -23,35 +23,34 @@
 
     export default Vue.extend({
 
-        created() {
-            this.$router.options.routes.forEach(route => {
-                console.info({
-                    name: route.name
-                    , path: route.path
-                })
-            })
-        },
-
         data() {
             return {
                 transitionName: 'test'
             }
         },
 
+        methods: {
+
+            getRouteIndex(string) {
+                return _.findIndex(this.$router.options.routes[1].children, (route) => {
+                    if(route.path == string) {
+                        return route
+                    }
+                })
+            }
+
+        },
+
         watch: {
 
             '$route' (to, from) {
 
-                console.info(to)
-                console.info(from)
-
-                const toDepth = to.path.split('/').length
-                const fromDepth = from.path.split('/').length
+                const toDepth = this.getRouteIndex(to.path.split('/').filter( v => v != '')[0])
+                const fromDepth = this.getRouteIndex(from.path.split('/').filter( v => v != '')[0])
 
                 Vue.set(this, 'transitionName', toDepth < fromDepth ? 'slide-right' : 'slide-left')
 
             }
-
         }
 
     });
