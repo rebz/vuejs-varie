@@ -6,7 +6,7 @@
 
             <code>layouts/core/CoreBody.vue</code>
 
-            <transition :name="transitionName">
+            <transition name="slide-left">
 
                 <router-view></router-view>
 
