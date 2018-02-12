@@ -44,12 +44,9 @@
         watch: {
 
             '$route' (to, from) {
-
                 const toDepth = this.getRouteIndex(to.path.split('/').filter( v => v != '')[0])
                 const fromDepth = this.getRouteIndex(from.path.split('/').filter( v => v != '')[0])
-
                 Vue.set(this, 'transitionName', toDepth < fromDepth ? 'slide-right' : 'slide-left')
-
             }
         }
 
