@@ -32,7 +32,7 @@
         methods: {
 
             getRouteIndex(string) {
-                return _.findIndex(this.$router.options.routes[1].children, (route) => {
+                return _.findIndex(this.$router.options.routes[0].children, (route) => {
                     if(route.path == string) {
                         return route
                     }
