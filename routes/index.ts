@@ -7,8 +7,7 @@ import RouterInterface from "varie/lib/routing/RouterInterface";
  *
  * ...
  */
-$router.template("/", "layouts/core").group(() => {
-
+$router.layout("layouts/core").group(() => {
 
     /**
      * Dashboard
@@ -23,20 +22,17 @@ $router.template("/", "layouts/core").group(() => {
      *
      * ...
      */
-    $router.template("/events", "events/layout").group(() => {
-
+    $router.prefix("/events").layout( "events/layout").group(() => {
         $router.route("/", "events/index").setName("events");
 
     });
-
 
     /**
      * People
      *
      * ...
      */
-    $router.template("/people", "people/layout").group(() => {
-
+    $router.prefix("/people").layout( "people/layout").group(() => {
         $router.route("/", "people/index").setName("people");
 
         $router.route("/:person", "people/view").setName("people-view");
@@ -49,7 +45,7 @@ $router.template("/", "layouts/core").group(() => {
      *
      * ...
      */
-    $router.template("/places", "places/layout").group(() => {
+    $router.prefix("/places").layout( "places/layout").group(() => {
 
         $router.route("/", "places/index").setName("places");
 
