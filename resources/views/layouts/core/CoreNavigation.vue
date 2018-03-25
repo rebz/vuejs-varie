@@ -32,7 +32,6 @@
 
                 <router-link :to="{ name: 'places' }">Places</router-link>
 
-
             </nav>
 
         </div>

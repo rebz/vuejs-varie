@@ -6,6 +6,8 @@
 
             <code>people/layout.vue</code>
 
+            <router-view name="sidebar"></router-view>
+
             <router-view></router-view>
 
         </div>

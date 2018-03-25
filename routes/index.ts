@@ -33,9 +33,18 @@ $router.layout("layouts/core").group(() => {
      * ...
      */
     $router.prefix("/people").layout( "people/layout").group(() => {
-        $router.route("/", "people/index").setName("people");
 
-        $router.route("/:person", "people/view").setName("people-view");
+        $router.route("/", {
+            default: "people/index",
+            sidebar: "people/sidebar"
+        }).setName("people");
+
+        $router.route("/:person", {
+            default: "people/view",
+            sidebar: "people/view-sidebar"
+        }).setName("people-view");
+
+        // $router.route("/:person", "people/view").setName("people-view");
 
     });
 

@@ -18,7 +18,7 @@ mix
   .typeScript("app/app.ts", "js")
   .extract(["vue", "vue-router", "vuex"])
   .sass("./resources/sass/app.scss", "css")
-  .setPublicPath("public")
+  .setPublicPath("./public")
   .browserSync({
     open: "external",
     host: env ? env.SITE_URL : "varie.test",
